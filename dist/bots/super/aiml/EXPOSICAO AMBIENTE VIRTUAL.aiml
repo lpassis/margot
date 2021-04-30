@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="2.0">
+<topic name = "EXPOSICAOAMBIENTEVIRTUAL">
+
+<category>
+    <pattern>QST3</pattern>
+    <template>
+	Você sabe o que é “Exposição no Ambiente Virtual”? DFT
+    </template> 
+ </category>
+
+<category>
+    <pattern>SIM</pattern>
+    <template>
+	Então me conte, adoro ler suas definições. Quero aprender com você. HPY
+    </template> 
+ </category>
+
+<category>
+    <pattern>NÃO</pattern>
+    <template>
+	Vou explicar. Exposição no ambiente virtual é a exposição exagerada de informações pessoais de uma pessoa na rede social. DFT
+QBRA<srai>DEFINIÇÃO</srai>
+    </template> 
+ </category>
+
+<category>
+    <pattern>DEFINIÇÃO</pattern>
+    <template>
+Agora, gostaria que você escolhesse uma das alternativas abaixo para exemplificar o conceito de "exposição no ambiente virtual". Transcreva a que você acha correta:
+QBRAJoãozinho cortou o cabelo e resolveu trocar a sua foto de perfil do facebook.
+QBRAJoãozinho escreveu uma mensagem no facebook anunciando a venda de um móvel que ele não usava mais.
+QBRAJoãozinho foi viajar e postou o local e horário que iria pegar o avião.
+    </template> 
+ </category>
+
+<category>
+    <pattern>* CORTOU * FOTO *</pattern>
+    <template>
+	Não é isso. Vamos tentar novamente. CNF
+QBRA<srai>PERGUNTA2</srai>
+    </template>
+</category> 
+
+<category>
+    <pattern>* ESCREVEU * MÓVEL *</pattern>
+    <template>
+	Não é isso. Vamos tentar novamente. CNF
+QBRA<srai>PERGUNTA2</srai>
+    </template> 
+
+ </category>
+
+ <category>
+    <pattern>* VIAJAR * HORÁRIO *</pattern>
+    <template>
+        Parabéns! Vejo que você está sabendo tudo. HPY
+QBRA<think><set name = "topic">CONSTRUCAOTESE</set></think><srai>PASSO2</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>PERGUNTA2</pattern>
+    <template>
+Escolha outra alternativa para exemplificar o conceito de exposição no ambiente virtual: DFT
+QBRAJoãozinho cortou o cabelo e resolveu trocar a sua foto de perfil do facebook.
+QBRAJoãozinho foi viajar e postou o local e horário que iria pegar o avião.<think><set name = "topic">EXPOSICAOAMBIENTEVIRTUAL2</set></think>
+    </template> 
+ </category>
+</topic>
+
+<topic name="EXPOSICAOAMBIENTEVIRTUAL2">
+
+<category>
+    <pattern>* CORTOU * FOTO *</pattern>
+    <template>
+	Não é isso. Mas vamos continuar. CNF
+QBRA<think><set name = "topic">CONSTRUCAOTESE</set></think><srai>PASSO2</srai>
+    </template>
+</category> 
+
+ <category>
+    <pattern>* VIAJAR * HORÁRIO *</pattern>
+    <template>
+        Parabéns! Vejo que você está sabendo tudo. HPY
+QBRA<think><set name = "topic">CONSTRUCAOTESE</set></think><srai>PASSO2</srai>
+    </template> 
+ </category>
+
+</topic>
+
+</aiml>

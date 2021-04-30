@@ -1,0 +1,6 @@
+0,POSITIVA,*,ARGUMENTA,Você está quase me convencendo... por que você acha positiva? HPY#Newline    <think><set name="topic">FIM</set></think>,ARGUMENTACAO.aiml
+0,NEGATIVA,*,ARGUMENTA,Você está quase me convencendo... por que você acha negativa? HPY#Newline    <think><set name="topic">FIM</set></think>,ARGUMENTACAO.aiml
+0,DEPENDE,*,ARGUMENTA,Essa resposta me deixa confusa! Você tem que se posiicionar! A Exposição excessiva em Ambiente Virtual é positiva ou negativa? CNF,ARGUMENTACAO.aiml
+0,NÃO SEI,*,ARGUMENTA,Essa resposta me deixa confusa! Você tem que se posiicionar! A Exposição excessiva em Ambiente Virtual é positiva ou negativa? CNF,ARGUMENTACAO.aiml
+0,*,*,ARGUMENTA,Não entendi o seu posicionamento! Vou perguntar novamente: A Exposição excessiva em Ambiente Virtual é positiva ou negativa? CNF,ARGUMENTACAO.aiml
+0,*,*,FIM,Interessante! Adorei ver que agora você tem uma opinião a respeito disso. Foi ótimo conversar com você! Depois desse nosso bate papo#Comma você poderá produzir um texto argumentativo com a orientação do seu professor. Até mais! HPY#Newline#Newline---FIM DA IMPLEMENTAÇÃO---,ARGUMENTACAO.aiml

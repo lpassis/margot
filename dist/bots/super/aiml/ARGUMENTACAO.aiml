@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="2.0">
+<topic name = "ARGUMENTA">
+
+<category>
+    <pattern>POSITIVA</pattern>
+    <template>
+    Você está quase me convencendo... por que você acha positiva? HPY
+    <think><set name ="topic">FIM</set></think>
+    </template>
+</category>
+
+<category>
+    <pattern>NEGATIVA</pattern>
+    <template>
+    Você está quase me convencendo... por que você acha negativa? HPY
+    <think><set name ="topic">FIM</set></think>
+    </template>
+</category>
+
+<category>
+    <pattern>DEPENDE</pattern>
+    <template>
+    Essa resposta me deixa confusa! Você tem que se posiicionar! A Exposição excessiva em Ambiente Virtual é positiva ou negativa? CNF
+    </template>
+</category>
+
+<category>
+    <pattern>NÃO SEI</pattern>
+    <template>
+    Essa resposta me deixa confusa! Você tem que se posiicionar! A Exposição excessiva em Ambiente Virtual é positiva ou negativa? CNF
+    </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <template>
+    Não entendi o seu posicionamento! Vou perguntar novamente: A Exposição excessiva em Ambiente Virtual é positiva ou negativa? CNF
+    </template>
+</category>
+
+</topic>
+
+<topic name = "FIM">
+
+<category>
+    <pattern>*</pattern>
+    <template>
+    Interessante! Adorei ver que agora você tem uma opinião a respeito disso. Foi ótimo conversar com você! Depois desse nosso bate papo, você poderá produzir um texto argumentativo com a orientação do seu professor. Até mais! HPY
+
+---FIM DA IMPLEMENTAÇÃO---
+    </template>
+</category>
+</topic>
+
+</aiml>

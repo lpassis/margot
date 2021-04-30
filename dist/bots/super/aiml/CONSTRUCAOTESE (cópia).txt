@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+<topic name = "CONSTRUCAOTESE">
+
+ <category>
+    <pattern>PASSO2</pattern>
+    <template>
+        Nessa etapa vamos desenvolver seu ponto de vista. Você considera a exposição no ambiente virtual positiva ou negativa?
+    </template>
+ </category>
+
+ <category>
+    <pattern>POSITIVA</pattern>
+    <template>
+	Você considera a exposição no ambiente virtual positiva, mas existem pontos negativos entorno dessa exposição.
+QBRA<srai>PONTOS</srai>
+    </template>
+ </category>
+
+<category>
+    <pattern>NEGATIVA</pattern>
+    <template>
+        Você considera a exposição no ambiente virtual negativa, mas existem pontos positivos entorno dessa exposição.
+	<srai>PONTOS</srai>
+   </template>
+  </category>
+
+<category>
+    <pattern>PONTOS</pattern>
+    <template>
+	<random>
+<li>Em alguns casos, a exposição no ambiente virtual causa uma dependência muito grande nas pessoas.<think><set name ="topic">PNT1</set></think></li>
+<li>Em alguns casos, a exposição no ambiente virtual pode contribuir para o aumento do bullyng.<think><set name ="topic">PNT2</set></think></li>
+<li>A exposição no ambiente virtual pode contribuir para o aumento do preconceito.<think><set name ="topic">PNT3</set></think></li>
+<li>O uso do ambiente virtual possibilita a troca de conhecimento entre as pessoas.<think><set name ="topic">PNT14</set></think></li>
+<li>O ambiente virtual ajuda na rapidez de obter uma informação.<think><set name ="topic">PNT15</set></think></li>
+<li>O ambiente virtual ajuda na exposição de denúncias de abusos contra as pessoas.<think><set name ="topic">PNT16</set></think></li>
+	</random>
+QBRAVocê considera isso bom ou ruim? 
+    </template>
+ </category>
+</topic>
+
+<topic name="PNT1">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    As consequências da exposição prolongada às parafernalhas eletrônicas podem ser muitas, de físicas a psicológicas. O contato excessivo com a tecnologia pode provocar depressão, transtorno obsessivo compulsivo (TOC), transtorno bipolar do humor, fobia social, além de déficit de atenção e hiperatividade.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Exatamente! Na maioria dos casos o exagero do uso é muito prejudicial.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+</topic>
+
+<topic name="PNT2">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Na internet e no celular, mensagens com imagens e comentários depreciativos se alastram rapidamente e tornam o bullying ainda mais perverso.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Exatamente! Tanto o bullying, quanto o cyberbullying podem prejudicar a vida de inúmeras pessoas.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+</topic>
+
+<topic name="PNT3">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Na internet e no celular, mensagens com imagens e comentários preconceituosos se alastram rapidamente e potencializa os danos causados as vítimas.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+Exatamente, muitos se aproveitam do anonimato para praticar atos preconceituosos.	
+QBRA<srai>PONTOS2</srai>    
+    </template>
+</category>
+</topic>
+
+<topic name="PNT4">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    O excesso de informações pessoais compartilhadas pode motivar ataques tanto no ambiente virtual quanto fora dele.
+QBRA<srai>PONTOS3</srai>   
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Exatamente! Se expor além do necessário pode atrair olhares maliciosos e assim atrair ameaças.
+QBRA<srai>PONTOS3</srai>   
+    </template>
+</category>
+</topic>
+
+<topic name="PNT5">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Na rede social, a exposição dá condições para que saibam sobre a situação social e financeira, o que pode despertar o interesse de alguém.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Exatamente! Se expor além do necessário pode atrair olhares maliciosos e assim atrair ameaças.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT6">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Não se preocupando com privacidade, os jovens costumam estender suas publicações a milhares de desconhecidos como uma forma de socializar-se.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Exatamente! Se expor além do necessário pode atrair olhares maliciosos e assim atrair ameaças.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT7">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Passar a maior parte do tempo no celular e esquecer de dialogar com o parceiro, por exemplo, pode determinar o fim de um relacionamento.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Exatamente! Restringir o contato à apenas contatos em ambiente virtual pode atrapalhar e/ou afastar amizades pois o contato físico é essencial.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT8">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! Usada com sabedoria o ambiente virtual pode contribuir com contato com amigos e familiares distantes.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    A tecnologia pode fazer você não perder o contato com pessoas queridas, conversar com quem mora longe e conhecer pessoas mais facilmente.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT9">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! Através do ambiente virtual é possível que inúmeras pessoas possam ter acesso a educação de qualidade.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    O acesso a informação na Internet facilita vastas oportunidades, como a educação acessível e inclusiva, entre outros pontos.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT10">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    O acesso a informação na Internet facilita vastas oportunidades, como a educação acessível e inclusiva, entre outros pontos.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    O acesso a informação na Internet facilita vastas oportunidades, como a educação acessível e inclusiva, entre outros pontos.
+QBRA<srai>DENOVO</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT11">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! Usada com sabedoria o ambiente virtual pode contribuir com contato com amigos e familiares distantes.
+QBRA<srai>PONTOS3</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    A tecnologia pode fazer você não perder o contato com pessoas queridas, conversar com quem mora longe e conhecer pessoas mais facilmente.
+QBRA<srai>PONTOS3</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT12">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! O uso do ambiente virtual pode estimular a crianças e adolecentes a serem mais criativos. 
+QBRA<srai>PONTOS3</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    Os pais devem estabelecer uma disciplina para o uso dos meios eletrônicos, e não simplesmente eliminar o computador da vida dos filhos.
+QBRA<srai>PONTOS3</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT13">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! Usada com sabedoria o ambiente virtual pode contribuir com contato com amigos e familiares distantes.
+QBRA<srai>PONTOS3</srai>  
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    A tecnologia pode fazer você não perder o contato com pessoas queridas, conversar com quem mora longe e conhecer pessoas mais facilmente.
+QBRA<srai>PONTOS3</srai>  
+    </template>
+</category>
+</topic>
+
+<topic name="PNT14">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    No ambiente virtual pode-se adquirir e compartilhar conhecimento através de redes sociais e foruns, possibilitando o apredizado.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+</topic>
+
+<topic name="PNT15">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! Através do ambiente virtual o acesso a informação fica mais fácil, ajudando a adquirir conhecimento.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    No ambiente virtual pode-se ter acesso a artigos e livros de forma mais rápida, facilitando o acesso ao conhecimento.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+</topic>
+
+<topic name="PNT16">
+<category>
+    <pattern>BOM</pattern>
+    <template>
+    Exatamente! O ambiente virtual em inúmeros casos ajuda a encontrar pessoas que cometeram crimes.
+QBRA<srai>PONTOS2</srai>   
+    </template>
+</category>
+<category>
+    <pattern>RUIM</pattern>
+    <template>
+    O ambiente virtual pode facilitar a divulgação de abusos ocorridos no cotidiano, aumentando as chances que agressores, pedofilos e demais infratores sejam punidos.
+QBRA<srai>PONTOS2</srai>
+    </template>
+</category>
+</topic>
+
+<category>
+<pattern>PONTOS2</pattern>
+    <template>
+	<random>
+<li>Com a exposição no ambiente virtual, as pessoas ficam mais vulneráveis ao perigo, pois todo mundo sabe tudo que acontece na vida daquela pessoa que vive postando sua vida pessoal nas redes sociais.<think><set name ="topic">PNT4</set></think></li>
+<li>A exposição no ambiente virtual pode aumentar o risco de sequestros.<think><set name ="topic">PNT5</set></think></li>
+<li>O uso do ambiente virtual promove a interação entre as pessoas que moram em outro país.<think><set name ="topic">PNT11</set></think></li>
+<li>O uso do ambiente virtual desperta a criatividade das crianças.<think><set name ="topic">PNT12</set></think></li>
+<li>O ambiente virtual possibilita o conhecimento de pessoas.<think><set name ="topic">PNT13</set></think></li>
+	</random>
+Você considera isso bom ou ruim? 
+    </template>
+</category>
+
+<category>
+<pattern>PONTOS3</pattern>
+    <template>
+	<random>
+<li>A exposição no ambiente virtual pode deixar as pessoas antissociais.<think><set name ="topic">PNT6</set></think></li>
+<li>A exposição no ambiente virtual pode fazer as pessoas pararem de se comunicar pessoalmente.<think><set name ="topic">PNT7</set></think></li>
+<li>A exposição no ambiente virtual ajuda na comunicação de pessoas que estão longe.<think><set name ="topic">PNT8</set></think></li>
+<li>A exposição no ambiente virtual pode facilitar a acessibilidade da informação.<think><set name ="topic">PNT9</set></think></li>
+<li>O uso do ambiente virtual facilita o acesso ao ensino à distancia.<think><set name ="topic">PNT10</set></think></li>
+	</random>
+Você considera isso bom ou ruim? 
+    </template>
+</category>
+
+<category>
+<pattern>DENOVO</pattern>
+    <template>
+	Depois do que conversamos, você acha a que a Exposição excessiva em Ambiente Virtual é positiva ou negativa? <think><set name ="topic">ARGUMENTA</set></think>
+    </template>
+</category>
+
+</aiml>
+
+

@@ -1,0 +1,14 @@
+0,SIM,*,VIRTUAL,Por favor me explique! DFT,VIRTUAL.aiml
+0,NÃO,*,VIRTUAL,Virtual é “algo que não é físico#Comma não é palpável#Comma está relacionado diretamente com a tecnologia#Comma com a internet.” DFT#NewlineQBRA<srai>DEFINIÇÃO</srai>,VIRTUAL.aiml
+0,DEFINIÇÃO,*,VIRTUAL,Vamos ver se você sabe o que é “Virtual”. Transcreva a frase que acha correta: DFT#NewlineQBRAAlgo não real criado pelo computador.#NewlineQBRAJogos físicos para diversão em grupo. #NewlineQBRAO mesmo que ficção científica.,VIRTUAL.aiml
+0,* REAL * COMPUTADOR,*,VIRTUAL,Muito bem! Vejo que você está por dentro do assunto. HPY#NewlineQBRA<think><set name="topic">AMBIENTEVIRTUAL</set></think><srai>QST2</srai>,VIRTUAL.aiml
+0,* FÍSICOS * DIVERSÃO *,*,VIRTUAL,Vejo que ainda não ficou claro para você o que é virtual. DFT#Newline<srai>PERGUNTA2</srai>,VIRTUAL.aiml
+0,* FICÇÃO *,*,VIRTUAL,Vejo que ainda não ficou claro para você o que é virtual. DFT<srai>PERGUNTA2</srai>,VIRTUAL.aiml
+0,PERGUNTA2,*,VIRTUAL,QBRAVamos tentar novamente. Escolha a frase que melhor representa a definição de “virtual” para você:#NewlineQBRAAlgo não real criado pelo computador.#NewlineQBRAO mesmo que ficção científica.#Newline<think><set name="topic">VIRTUAL2</set></think>,VIRTUAL.aiml
+0,*,*,VIRTUAL,Vejo que está confuso. DFT<think><set name="topic">VIRTUAL</set></think>#Newline<srai>PERGUNTA2</srai>,VIRTUAL.aiml
+0,* REAL * COMPUTADOR,*,VIRTUAL2,Muito bem! Vejo que você está por dentro do assunto. HPY#NewlineQBRA<think><set name="topic">AMBIENTEVIRTUAL</set></think><srai>QST2</srai>,VIRTUAL.aiml
+0,* FICÇÃO *,*,VIRTUAL2,Vejo que você ainda está confuso#Comma vou te ajudar mais uma vez. #NewlineQBRAVirtual é tudo que está ligado com a comunicação entre pessoas utilizando a internet#Comma uma comunicação que não é presencial. <srai>PERGUNTA3</srai>,VIRTUAL.aiml
+0,PERGUNTA3,*,VIRTUAL2,QBRASó mais uma pergunta e vamos para o próximo passo. Escolha a alternativa que você acha que pode ser considerado um exemplo de virtual.#NewlineQBRAConversa face a face com os amigos na escola;#NewlineQBRAMensagem via WhatsApp para um colega que mora longe.,VIRTUAL.aiml
+0,CONVERSA * AMIGOS * ESCOLA,*,VIRTUAL2,Vejo que você não está levando a sério! BRV #NewlineQBRA<think><set name="topic">AMBIENTEVIRTUAL</set></think><srai>QST2</srai>,VIRTUAL.aiml
+0,* MORA LONGE,*,VIRTUAL2,Parabéns#Comma você acertou! HPY#NewlineQBRA<think><set name="topic">AMBIENTEVIRTUAL</set></think> <srai>QST2</srai>,VIRTUAL.aiml
+0,*,*,VIRTUAL2,Vejo que está confuso. DFT<think><set name="topic">VIRTUAL</set></think>#Newline<srai>PERGUNTA3</srai>,VIRTUAL.aiml
