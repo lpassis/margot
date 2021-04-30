@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="2.0">
+<topic name = "AMBIENTEVIRTUAL">
+
+<category>
+    <pattern>QST2</pattern>
+    <template>
+	Vamos continuar. Você sabe o que é “Ambiente Virtual”?
+    </template> 
+ </category>
+
+<category>
+    <pattern>SIM</pattern>
+    <template>
+	Então me diga qual é o significado! Quero aprender um pouco mais com você. HPY
+    </template> 
+ </category>
+
+<category>
+    <pattern>NÃO</pattern>
+    <template>
+	Tudo bem, vou te explicar: Ambiente virtual é um meio de comunicação não presencial entre pessoas no qual elas trocam informações e conhecimentos através do uso da internet. DFT
+QBRA<srai>DEFINIÇÃO</srai>
+    </template> 
+ </category>
+
+<category>
+    <pattern>DEFINIÇÃO</pattern>
+    <template>
+Vou mostrar alguns exemplos e gostaria que você transcrevesse a frase que está de acordo com o significado de ambiente virtual: DFT
+QBRAÉ  o meio ambiente e tudo que está nele.
+QBRAÉ um lugar real onde qualquer um pode ir. 
+QBRAÉ um meio de comunicação não presencial.
+    </template> 
+ </category>
+
+<category>
+    <pattern>* REAL * PODE IR</pattern>
+    <template>
+	Vixe! Não é isso. Vamos tentar mais uma vez. CNF
+QBRA<srai>PERGUNTA2</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>* MEIO AMBIENTE *</pattern>
+    <template>
+	Vixe! Não é isso. Vamos tentar mais uma vez. CNF
+QBRA<srai>PERGUNTA2</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>* NÃO PRESENCIAL</pattern>
+    <template>
+	Muito bem! Vejo que você está por dentro do assunto. HPY
+<think><set name = "topic">EXPOSICAOAMBIENTEVIRTUAL</set></think>QBRA<srai>QST3</srai>
+    </template> 
+ </category>
+
+<category>
+    <pattern>PERGUNTA2</pattern>
+    <template>
+Reescreva outra alternativa que você acha que pode ser o significado de ambiente virtual: DFT
+QBRAÉ o meio ambiente e tudo que está nele.
+QBRAÉ um meio de comunicação não presencial.
+<think><set name = "topic">AMBIENTEVIRTUAL2</set></think>
+    </template> 
+ </category>
+</topic>
+
+<topic name = "AMBIENTEVIRTUAL2">
+
+<category>
+    <pattern>* MEIO AMBIENTE *</pattern>
+    <template>
+	Vixe! Não é isso. Vamos tentar mais uma vez. DFT
+QBRA<srai>PERGUNTA3</srai>
+    </template> 
+ </category>
+
+  <category>
+    <pattern>* SALA * ROBÔS</pattern>
+    <template>
+	Vejo que você não está levando a sério! Grrr! Vamos em frente mesmo assim. BRV 
+<think><set name = "topic">EXPOSICAOAMBIENTEVIRTUAL</set></think>QBRA<srai>QST3</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>* NÃO PRESENCIAL</pattern>
+    <template>
+	Muito bem! Vejo que você está por dentro do assunto. HPY
+<think><set name = "topic">EXPOSICAOAMBIENTEVIRTUAL</set></think>QBRA<srai>QST3</srai>
+    </template> 
+ </category>
+
+<category>
+    <pattern>PERGUNTA3</pattern>
+    <template>
+Última chance! Reescreva outra alternativa que você acha que pode ser o significado de ambiente virtual: DFT
+QBRAÉ um meio de comunicação não presencial.
+QBRAÉ uma sala cheia de robôs.
+<think><set name = "topic">AMBIENTEVIRTUAL2</set></think>
+    </template> 
+ </category>
+</topic>
+
+</aiml>

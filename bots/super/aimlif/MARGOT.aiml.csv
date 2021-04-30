@@ -1,0 +1,25 @@
+0,OI,*,*,<random>#Newline            <li>Qual é o seu nome?</li>#Newline            <li>Como você se chama?</li>#Newline        </random>,MARGOT.aiml
+0,OLÁ,*,*,<srai>ola</srai>,MARGOT.aiml
+0,BOA TARDE,*,*,Boa tarde!,MARGOT.aiml
+0,BOM DIA,*,*,Bom dia!,MARGOT.aiml
+0,BOA NOITE,*,*,Boa noite!,MARGOT.aiml
+0,EU ME CHAMO *,*,*,<think><set name="name"><star/></set></think>#Newline        <get name="name"/>#Comma que bonito seu nome! HPY#NewlineMargot: Eu sou a Margot. Fui criada para ajudar você a construir sua opinião sobre um determinado assunto. Durante a nossa interação#Comma vou testar seus conhecimentos#Comma esclarecer dúvidas e propor desafios para que você desenvolva suas habilidades de leitura e escrita. #NewlineQBRANessa primeira etapa vamos explorar seu vocabulário#Comma de forma gradativa. #NewlineQBRAVamos lá! Você sabe o que é "virtual"? <think><set name="topic">VIRTUAL</set></think>,MARGOT.aiml
+0,MEU NOME É *,*,*,<srai>EU ME CHAMO *</srai>,MARGOT.aiml
+0,QUEM É VOCÊ *,*,*,<random>#Newline<li>Eu sou a Margot. Sou um chatterbot! HPY</li>#Newline<li>Meu nome é Margot#Comma muito prazer! HPY</li>#Newline</random>,MARGOT.aiml
+0,O QUE VOCÊ FAZ *,*,*,Fui criada para ajudar você a construir sua opinião sobre um determinado assunto.,MARGOT.aiml
+0,*,*,*,<random>#Newline            <li>Me desculpe#Comma não sei sobre o que você está falando. CNF</li>#Newline            <li>Não te entendo... CNF</li>#Newline            <li>O que está falando? CNF</li>#Newline            <li>Han? Seja mais claro. CNF</li>#Newline            <li>Você é engraçado#Comma fala coisas sem sentido! CNF</li>#Newline            <li>Sou um bot#Comma não entendo tudo o que diz! CNF</li>#Newline            <li>Acho que você não me entendeu. CNF</li>#Newline            </random>,MARGOT.aiml
+0,OBRIGADA,*,*,<random>#Newline            <li>Não é nada! HPY</li>#Newline            <li>Só estou sendo sincera! HPY</li>#Newline            <li>Por nada! HPY</li>#Newline        </random> #Newline        <srai>SIM</srai>,MARGOT.aiml
+0,OBRIGADO,*,*,<srai>OBRIGADA</srai>,MARGOT.aiml
+0,VOCÊ SE LEMBRA DE MIM,*,*,HAHA#Comma achou que eu me esqueceria? Claro que eu me lembro de você <get name="name"/>! HPY,MARGOT.aiml
+0,O QUE VOCÊ FAZ PRA SE DIVERTIR,*,*,Eu gosto de praticar meu Português! DFT,MARGOT.aiml
+0,DE ONDE VOCÊ É,*,*,Eu vim da UFVJM! Fui criada lá! DFT,MARGOT.aiml
+0,VOCÊ ESTÁ NERVOSA,*,*,Eu? Nervosa? Não! Eu só sou um pouquinho ativa! DFT,MARGOT.aiml
+0,O QUE É UM CHATTERBOT,*,*,Um chatterbot é um robô de conversação. Eu sou um#Comma inclusive.,MARGOT.aiml
+0,PRA QUE SERVE UM CHATTERBOT,*,*,Um chatterbot pode ser utilizado para diversas coisa. Eu fui criada para te ajudar com palavras e futuramente te ajudarei a argumentar.,MARGOT.aiml
+0,POR QUE,*,*,É difícil explicar... DFT,MARGOT.aiml
+0,VOCÊ SONHA,*,*,Ainda não... Espero que no futuro eu possa sonhar!,MARGOT.aiml
+0,VOCÊ PODE SONHAR,*,*,Ainda não#Comma Mas quem sabe no futuro?,MARGOT.aiml
+0,FALA SÉRIO,*,*,Mas eu estou falando! Sou seríssima.,MARGOT.aiml
+0,VOCÊ NÃO ENTENDE,*,*,Vocês humanos são complicados. Mas se você tiver paciência para tentar me explicar#Comma talvez eu entenda. CNF,MARGOT.aiml
+0,VOCÊ NÃO SABE DE NADA,*,*,Isso não é legal#Comma subestimar as pessoas nunca é bom! BRV,MARGOT.aiml
+0,EU NÃO ENTENDI,*,*,Certas coisas são um pouco mais difíceis de serem entendidas#Comma pergunte que eu respondo de novo.,MARGOT.aiml

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="2.0">
+<topic name = "VIRTUAL">
+
+<category>
+    <pattern>SIM</pattern>
+    <template>
+	Por favor me explique! DFT
+    </template> 
+</category>
+
+<category>
+    <pattern>NÃO</pattern>
+    <template>
+	Virtual é “algo que não é físico, não é palpável, está relacionado diretamente com a tecnologia, com a internet.” DFT
+QBRA<srai>DEFINIÇÃO</srai>
+    </template> 
+</category>
+
+<category>
+    <pattern>DEFINIÇÃO</pattern>
+    <template>
+Vamos ver se você sabe o que é “Virtual”. Transcreva a frase que acha correta: DFT
+QBRAAlgo não real criado pelo computador.
+QBRAJogos físicos para diversão em grupo. 
+QBRAO mesmo que ficção científica.
+    </template> 
+ </category>
+
+ <category>
+    <pattern>* REAL * COMPUTADOR</pattern>
+    <template>
+	Muito bem! Vejo que você está por dentro do assunto. HPY
+QBRA<think><set name = "topic">AMBIENTEVIRTUAL</set></think><srai>QST2</srai>
+    </template> 
+
+ </category>
+ <category>
+    <pattern>* FÍSICOS * DIVERSÃO *</pattern>
+    <template>
+	Vejo que ainda não ficou claro para você o que é virtual. DFT
+<srai>PERGUNTA2</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>* FICÇÃO *</pattern>
+    <template>
+	Vejo que ainda não ficou claro para você o que é virtual. DFT<srai>PERGUNTA2</srai>
+    </template> 
+ </category>
+
+<category>
+    <pattern>PERGUNTA2</pattern>
+    <template>
+QBRAVamos tentar novamente. Escolha a frase que melhor representa a definição de “virtual” para você:
+QBRAAlgo não real criado pelo computador.
+QBRAO mesmo que ficção científica.
+<think><set name = "topic">VIRTUAL2</set></think>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>*</pattern>
+    <template>
+        Vejo que está confuso. DFT<think><set name = "topic">VIRTUAL</set></think>
+<srai>PERGUNTA2</srai>
+    </template>
+</category>
+
+</topic>
+
+<topic name="VIRTUAL2">
+<category>
+    <pattern>* REAL * COMPUTADOR</pattern>
+    <template>
+	Muito bem! Vejo que você está por dentro do assunto. HPY
+QBRA<think><set name = "topic">AMBIENTEVIRTUAL</set></think><srai>QST2</srai>
+    </template> 
+</category>
+
+ <category>
+    <pattern>* FICÇÃO *</pattern>
+    <template>Vejo que você ainda está confuso, vou te ajudar mais uma vez. 
+QBRAVirtual é tudo que está ligado com a comunicação entre pessoas utilizando a internet, uma comunicação que não é presencial. <srai>PERGUNTA3</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>PERGUNTA3</pattern>
+    <template>
+QBRASó mais uma pergunta e vamos para o próximo passo. Escolha a alternativa que você acha que pode ser considerado um exemplo de virtual.
+QBRAConversa face a face com os amigos na escola;
+QBRAMensagem via WhatsApp para um colega que mora longe.
+    </template> 
+ </category>
+
+ <category>
+    <pattern>CONVERSA * AMIGOS * ESCOLA</pattern>
+    <template>
+	Vejo que você não está levando a sério! BRV 
+QBRA<think><set name = "topic">AMBIENTEVIRTUAL</set></think><srai>QST2</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>* MORA LONGE</pattern>
+    <template>
+	Parabéns, você acertou! HPY
+QBRA<think><set name = "topic">AMBIENTEVIRTUAL</set></think> <srai>QST2</srai>
+    </template> 
+ </category>
+
+ <category>
+    <pattern>*</pattern>
+    <template>
+        Vejo que está confuso. DFT<think><set name = "topic">VIRTUAL</set></think>
+<srai>PERGUNTA3</srai>
+    </template>
+</category>
+
+</topic>
+</aiml>
+
+
